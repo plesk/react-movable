@@ -1,6 +1,6 @@
 {
-  "name": "react-movable",
-  "version": "2.5.1",
+  "name": "@plesk/react-movable",
+  "version": "2.6.0",
   "description": "Drag and drop lists.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tajo/react-movable"
+    "url": "https://github.com/plesk/react-movable"
   },
   "author": "Vojtech Miksu <vojtech@miksu.cz>",
   "license": "MIT",
