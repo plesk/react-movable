@@ -44,6 +44,9 @@ export interface IProps<Value> {
   lockVertically: boolean;
   voiceover: IVoiceover;
   container?: Element | null;
+  hooks?: {
+    getChildren?: <T>(elements: T[]) => T[];
+  };
 }
 
 export type TEvent = React.MouseEvent | React.TouchEvent | React.KeyboardEvent;

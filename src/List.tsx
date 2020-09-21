@@ -94,7 +94,14 @@ class List<Value = string> extends React.Component<IProps<Value>> {
 
   getChildren = () => {
     if (this.listRef && this.listRef.current) {
-      return Array.from(this.listRef.current.children);
+      const children = Array.from(this.listRef.current.children);
+      if (
+        this.props.hooks &&
+        typeof this.props.hooks.getChildren === 'function'
+      ) {
+        return this.props.hooks.getChildren(children);
+      }
+      return children;
     }
     console.warn(
       'No items found in the List container. Did you forget to pass & spread the `props` param in renderList?'
