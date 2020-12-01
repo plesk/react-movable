@@ -1,6 +1,6 @@
 {
   "name": "@plesk/react-movable",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Drag and drop lists.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
