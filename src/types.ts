@@ -47,6 +47,7 @@ export interface IProps<Value> {
   hooks?: {
     getChildren?: <T>(elements: T[]) => T[];
   };
+  useDragHandle?: boolean;
 }
 
 export type TEvent = React.MouseEvent | React.TouchEvent | React.KeyboardEvent;

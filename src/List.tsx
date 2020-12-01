@@ -548,10 +548,12 @@ class List<Value = string> extends React.Component<IProps<Value>> {
 
   render() {
     const baseStyle = {
-      userSelect: 'none',
-      WebkitUserSelect: 'none',
-      MozUserSelect: 'none',
-      msUserSelect: 'none',
+      ...(this.props.useDragHandle ? undefined : {
+        userSelect: 'none',
+        WebkitUserSelect: 'none',
+        MozUserSelect: 'none',
+        msUserSelect: 'none',
+      }),
       boxSizing: 'border-box',
       position: 'relative'
     } as React.CSSProperties;
